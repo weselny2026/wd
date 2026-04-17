@@ -1,0 +1,579 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  background: #ffffff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('para.jpg') no-repeat center center;
+  background-size: 85%;
+  background-color: #111;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: heroDrop 1.4s ease;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* LICZNIK */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.time-box span {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+.time-box small {
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+/* SEKCJE */
+section {
+  background: white;
+  padding: 55px 20px;
+}
+
+.content-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.location-box {
+  max-width: 1050px;
+}
+
+/* TEKST */
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.9em;
+  color: #4b3427;
+}
+
+p {
+  font-size: 1.4em;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1.3em;
+  margin: 12px 0;
+}
+
+/* WSTĘP */
+.welcome-section {
+  padding-top: 75px;
+  padding-bottom: 35px;
+}
+
+.route-section {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.route-text {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* OZDOBNY BLOK CEREMONII */
+.ceremony-intro {
+  background: #fff;
+  text-align: center;
+  padding: 0 20px 25px;
+}
+
+.divider-line {
+  width: 120px;
+  height: 1px;
+  background: #d8c2b0;
+  margin: 0 auto 14px;
+}
+
+.church-icon {
+  width: 110px;
+  max-width: 110px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  opacity: 0.95;
+}
+
+.ceremony-quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.7em;
+  color: #8b5e3c;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+
+/* KARTY CEREMONIA / PRZYJĘCIE */
+.info-card {
+  background: #fdf9f6;
+  border: 1px solid #ead7c8;
+  border-radius: 28px;
+  padding: 45px 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* MAPKA */
+.map-frame {
+  border: 0;
+  border-radius: 22px;
+  margin-top: 25px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* PRZEWODNIK GOŚCIA */
+.guest-guide-section {
+  background: #fff;
+  padding: 70px 20px 40px;
+}
+
+.guest-guide-section .content-box {
+  max-width: 860px;
+}
+
+.guide-card {
+  background: #fdf9f6;
+  border: 1px solid #ead7c8;
+  border-radius: 28px;
+  padding: 38px 30px;
+  margin: 0 auto 28px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
+.guide-card:last-child {
+  margin-bottom: 0;
+}
+
+.guide-icon {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.guide-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 18px;
+}
+
+.guide-card p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #4b3427;
+}
+
+/* PRZYCISK ALBUMU */
+.album-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #7b1e2b, #4a0f19);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(123, 30, 43, 0.25);
+}
+
+.album-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #912738, #5c1623);
+  box-shadow: 0 12px 24px rgba(123, 30, 43, 0.35);
+}
+
+/* PRZYCISK */
+.rsvp-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #e65c7a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #c94e69;
+  transform: scale(1.05);
+}
+
+/* FORMULARZ RSVP */
+.rsvp-section {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.rsvp-card {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fdf9f6;
+  border-radius: 28px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.rsvp-card h2 {
+  font-size: 2.8em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #4b3427;
+}
+
+.rsvp-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 35px;
+  color: #5f4638;
+}
+
+.rsvp-form {
+  text-align: left;
+}
+
+.rsvp-form label {
+  display: block;
+  font-size: 1.35em;
+  margin-bottom: 10px;
+  margin-top: 22px;
+  color: #4b3427;
+}
+
+.rsvp-form input[type="text"],
+.rsvp-form input[type="tel"],
+.rsvp-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 22px;
+  border: 2px solid #b07a7a;
+  border-radius: 24px;
+  background: #fff;
+  font-size: 1.05em;
+  color: #4b3427;
+  outline: none;
+  font-family: Arial, sans-serif;
+  transition: all 0.25s ease;
+}
+
+.rsvp-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.rsvp-form input:focus,
+.rsvp-form textarea:focus {
+  border-color: #7b1e2b;
+  box-shadow: 0 0 0 3px rgba(123, 30, 43, 0.15);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.radio-option {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2em !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  cursor: pointer;
+  color: #4b3427;
+}
+
+.radio-option input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  accent-color: #8b5e3c;
+}
+
+.rsvp-submit {
+  width: 100%;
+  margin-top: 32px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #7b1e2b, #4a0f19);
+  color: #fff;
+  font-size: 1.35em;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 25px rgba(123, 30, 43, 0.35);
+  letter-spacing: 0.5px;
+}
+
+.rsvp-submit:hover {
+  transform: translateY(-3px) scale(1.01);
+  background: linear-gradient(135deg, #912738, #5c1623);
+  box-shadow: 0 12px 30px rgba(123, 30, 43, 0.45);
+}
+
+.rsvp-submit:active {
+  transform: translateY(0px) scale(0.99);
+  box-shadow: 0 5px 15px rgba(123, 30, 43, 0.3);
+}
+
+/* STOPKA */
+footer {
+  background: #f5f5f5;
+  padding: 25px 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ANIMACJE */
+@keyframes heroDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.from-left {
+  transform: translateX(-120px);
+}
+
+.from-right {
+  transform: translateX(120px);
+}
+
+.from-bottom {
+  transform: translateY(80px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* TELEFON */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero h1 {
+    font-size: 2.3em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  #countdown {
+    gap: 14px;
+  }
+
+  .time-box span {
+    width: 65px;
+    height: 65px;
+    font-size: 1.4em;
+  }
+
+  .time-box small {
+    font-size: 0.75em;
+  }
+
+  section {
+    padding: 30px 18px;
+  }
+
+  .welcome-section {
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+
+  .route-section {
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.9em;
+    margin-bottom: 14px;
+  }
+
+  p,
+  li {
+    font-size: 1.05em;
+    line-height: 1.55;
+    margin: 8px 0;
+  }
+
+  .ceremony-intro {
+    padding: 0 18px 10px;
+  }
+
+  .divider-line {
+    width: 70px;
+    margin-bottom: 8px;
+  }
+
+  .church-icon {
+    width: 68px;
+    max-width: 68px;
+    margin-bottom: 6px;
+  }
+
+  .ceremony-quote {
+    font-size: 1.6em;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .info-card {
+    padding: 26px 18px;
+    border-radius: 22px;
+  }
+
+  .map-frame {
+    height: 260px;
+  }
+
+  .guest-guide-section {
+    padding: 35px 18px 20px;
+  }
+
+  .guide-card {
+    padding: 28px 20px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+  }
+
+  .guide-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 14px;
+  }
+
+  .guide-card h3 {
+    font-size: 2.6em;
+    margin-bottom: 12px;
+  }
+
+  .guide-card p {
+    font-size: 1.02em;
+    line-height: 1.6;
+  }
+
+  .album-button {
+    font-size: 1em;
+    padding: 12px 24px;
+    margin-top: 18px;
+  }
+
+  .rsvp-card {
+    padding: 35px 20px;
+    border-radius: 22px;
+  }
+
+  .rsvp-card h2 {
+    font-size: 2.1em;
+  }
+
+  .rsvp-subtitle {
+    font-size: 1.05em;
+  }
+
+  .rsvp-form label {
+    font-size: 1.15em;
+  }
+
+  .radio-option {
+    font-size: 1.05em !important;
+  }
+
+  .rsvp-submit {
+    font-size: 1.15em;
+  }
+}
