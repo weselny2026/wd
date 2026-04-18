@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wesele Daniel & Weronika</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Weronika & Daniel</h1>
+      <p>11 lipca 2026</p>
+
+      <div id="countdown">
+        <div class="time-box">
+          <span id="days">0</span>
+          <small>DNI</small>
+        </div>
+
+        <div class="time-box">
+          <span id="hours">0</span>
+          <small>GODZIN</small>
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">0</span>
+          <small>MINUT</small>
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">0</span>
+          <small>SEKUND</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SŁOWA WSTĘPU -->
+  <section class="welcome-section hidden from-left">
+    <div class="content-box">
+      <h2>Drodzy Goście</h2>
+      <p>
+        Z ogromną radością zapraszamy Was do wspólnego celebrowania
+        jednego z najpiękniejszych dni w naszym życiu.
+      </p>
+      <p>
+        Będzie nam niezmiernie miło świętować razem z Wami
+        Nasz Dzień.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAPA DOJAZDU -->
+  <section class="route-section hidden from-right">
+    <div class="content-box">
+      <h2>Mapa dojazdu</h2>
+    </div>
+  </section>
+
+  <!-- OZDOBNY BLOK CEREMONII -->
+  <div class="ceremony-intro hidden from-bottom">
+    <div class="divider-line"></div>
+
+    <img
+      src="kosciolek.jpg"
+      alt="Ikona kościoła"
+      class="church-icon"
+      width="120"
+      height="120"
+    >
+
+    <p class="ceremony-quote">„Razem od lat… teraz na zawsze”</p>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- CEREMONIA -->
+  <section class="hidden from-left">
+    <div class="content-box location-box">
+      <div class="info-card">
+        <h2>Ceremonia</h2>
+        <p><strong>Godzina:</strong> 14:45</p>
+        <p><strong>Miejsce:</strong> Kościół pw. św. Maksymiliana Kolbego</p>
+        <p><strong>Adres:</strong> Droga Męczenników Majdanka 27, 20-325 Lublin</p>
+
+        <iframe
+          src="https://www.google.com/maps?q=Kościół+pw.+św.+Maksymiliana+Kolbego+Lublin&output=embed"
+          width="100%"
+          height="320"
+          class="map-frame"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRZYJĘCIE -->
+  <section class="hidden from-right">
+    <div class="content-box location-box">
+      <div class="info-card">
+        <h2>Wesele</h2>
+        <p><strong>Po ceremonii</strong></p>
+        <p><strong>Miejsce:</strong> Dworek Jabłonna</p>
+        <p><strong>Adres:</strong> Jabłonna-Majątek 44 a, 23-114 Jabłonna-Majątek</p>
+
+        <iframe
+          src="https://www.google.com/maps?q=Dworek+Jabłonna+Jabłonna-Majątek+44a&output=embed"
+          width="100%"
+          height="320"
+          class="map-frame"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRZEWODNIK GOŚCIA -->
+  <section class="guest-guide-section hidden from-bottom">
+    <div class="content-box">
+      <h2>Przewodnik Gościa</h2>
+
+      <div class="guide-card">
+        <img src="hotel.jpg" alt="Ikona noclegu" class="guide-icon">
+        <h3>Nocleg</h3>
+        <p>
+          Z myślą o komforcie naszych Gości przygotowaliśmy możliwość noclegu.
+          Prosimy o informację w formularzu, czy będziecie chcieli z niej skorzystać.
+        </p>
+      </div>
+
+      <div class="guide-card">
+        <img src="dzieci.jpg" alt="Ikona dzieci" class="guide-icon">
+        <h3>Dzieci</h3>
+        <p>
+          Na naszym weselu z radością powitamy również najmłodszych Gości.
+          Zależy nam, aby ten dzień był piękny i komfortowy dla całych rodzin.
+          Zatem dla dzieci przewidziane będą dodatkowe atrakcje.
+        </p>
+      </div>
+
+      <div class="guide-card">
+        <img src="zdjecia.jpg" alt="Ikona zdjęć" class="guide-icon">
+        <h3>Zdjęcia</h3>
+        <p>
+          Będzie nam niezwykle miło, jeśli podzielicie się z nami zdjęciami z tego wyjątkowego dnia.
+          Podczas wesela będziecie mogli dodawać je do wspólnego albumu.
+        </p>
+
+        <a href="https://photos.app.goo.gl/DEQwAjgeE2V4DF5R9" target="_blank" class="album-button">
+          Dodaj zdjęcia do albumu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARZ RSVP -->
+  <section class="rsvp-section hidden from-left" id="rsvp">
+    <div class="rsvp-card">
+      <h2>Potwierdzenie przybycia</h2>
+      <p class="rsvp-subtitle">Będzie nam bardzo miło, jeśli dacie znać, czy będziecie z nami w tym wyjątkowym dniu.</p>
+
+      <form class="rsvp-form" action="https://formspree.io/f/meeveopl" method="POST">
+        <label for="fullname">Imię i nazwisko</label>
+        <input type="text" id="fullname" name="Imię i nazwisko" placeholder="Np. Anna Kowalska" required>
+
+        <label>Czy pojawisz się na weselu?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="Obecność" value="Tak" required>
+            <span>Tak</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="Obecność" value="Nie">
+            <span>Nie</span>
+          </label>
+        </div>
+
+        <label>Czy będziesz z osobą towarzyszącą?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="Osoba towarzysząca" value="Tak" onclick="toggleGuestField(true)" required>
+            <span>Z osobą towarzyszącą</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="Osoba towarzysząca" value="Nie" onclick="toggleGuestField(false)">
+            <span>Sam / Sama</span>
+          </label>
+        </div>
+
+        <div id="guestField" style="display: none;">
+          <label for="guestname">Imię osoby towarzyszącej</label>
+          <input type="text" id="guestname" name="Osoba towarzysząca - imię i nazwisko" placeholder="Podaj imię ">
+        </div>
+
+        <label for="phone">Numer telefonu</label>
+        <input type="tel" id="phone" name="Telefon" placeholder="+48 123 456 789">
+
+        <label for="message">Wiadomość do Pary Młodej</label>
+        <textarea id="message" name="Wiadomość" rows="5" placeholder="Wpisz wiadomość..."></textarea>
+
+        <label for="extra">Dodatkowe informacje</label>
+        <input type="text" id="extra" name="Dodatkowe informacje" placeholder="Np. Posiłek bez mięsa/nocleg">
+
+        <input type="hidden" name="_subject" value="Nowe zgłoszenie weselne 💍">
+<div class="contact-info">
+  <p><strong>W razie pytań jesteśmy do Waszej dyspozycji</strong></p>
+  <p>Weronika: +48 799 931 277</p>
+  <p>Daniel: +48 500 499 330</p>
+</div>
+        <button type="submit" class="rsvp-submit">Potwierdzam przybycie!</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="hidden from-bottom">
+    <p>Do zobaczenia!</p>
+  </footer>
+
+  <!-- LICZNIK -->
+  <script>
+    const weddingDate = new Date("2026-07-11T14:45:00").getTime();
+
+    const countdown = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "To już dziś! 💍";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }, 1000);
+  </script>
+
+  <!-- POKAZYWANIE POLA OSOBY TOWARZYSZĄCEJ -->
+  <script>
+    function toggleGuestField(show) {
+      const field = document.getElementById("guestField");
+      field.style.display = show ? "block" : "none";
+    }
+  </script>
+
+  <!-- ANIMACJE PRZY SCROLLU -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>
